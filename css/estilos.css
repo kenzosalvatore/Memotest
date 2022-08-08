@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #020873;
+    font-family: 'Share Tech Mono', monospace;
+    color: #F2F2F2;
+    margin: 1em 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    padding-bottom: 0.2em
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+}
+
+h3{
+    text-align: center;
+    font-size: 1.5em;
+    margin: 1em;
+}
+
+#instrucciones{
+    margin: 3.5em 30%;
+}
+
+#instrucciones p{
+    text-align: center;
+    line-height: 1.5em;
+    padding-bottom: 2em;
+}
+
+#instrucciones ul{
+    text-align: center;
+    list-style: none;
+}
+
+#instrucciones ul li{
+    margin: 0.5em;
+}
+
+#aciertos,
+#errores {
+    font-size: 1.6em;
+}
+
+#estadisticas table {
+    margin-top: 0.4em;
+}
+
+#estadisticas table tr td {
+    padding: 0.3em 2em;
+
+}
+
+table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    background-color: #5E76BF;
+    color: #F2F2F2;
+    border: #5E76BF;
+    font-size: 2.3em;
+    font-weight: bold;
+    margin: 0.3em;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+button:hover {
+    background-color: #0A21A6;
+}
+
+
+#comenzar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#comenzar input {
+    width: 8em;
+    height: 2em;
+}
+
+#estadisticas {
+    display: none;
+}
+
+input {
+    width: 6em;
+    text-align: center;
+    background-color: #5E76BF;
+    color: #F2F2F2;
+    border: #5E76BF;
+    border-radius: 0%;
+    font-size: 1.8em;
+    font-weight: bold;
+    margin: 0.1em;
+    font-family: 'Share Tech Mono', monospace;
+    margin-top: 1em;
+}
+
+input:hover {
+    background-color: #0A21A6;
+}
+
+#memotest {
+    margin-top: 1.5em;
+    display: none;
+}
+
+#perdiste {
+    display: none;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 12% 0;
+}
+
+#ganaste {
+    display: none;
+    margin-top: 0.5em;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #4AF030;
+}
+
+#reiniciar {
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+}
+
+a:hover {
+    background-color: #0A21A6;
+}
+
+#reiniciar input {
+    width: 8em;
+    padding: 0.3em 0;
+}
+
+#nivelsig,
+#volver {
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#nivelsig a {
+    width: 8em;
+    padding: 0.3em 0;
+}
+
+a {
+    width: 6em;
+    text-align: center;
+    background-color: #5E76BF;
+    color: #F2F2F2;
+    border: #5E76BF;
+    border-radius: 0%;
+    font-size: 1.8em;
+    font-weight: bold;
+    font-family: 'Share Tech Mono', monospace;
+    margin-top: 1em;
+    text-decoration: none;
+    padding: 0.5em;
+}
+
+
+img {
+    width: 75%;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memotest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <section>
+        <h1>Memotest</h1>
+        <h2 id="slogan">¡Poné a prueba tu memoria!</h2>
+        <div id="instrucciones">
+            <h3>¿Cómo jugar?</h3>
+            <p>
+                El juego se compone de pares de tarjetas repetidas mezcladas, con la figura no visible. El objetivo es
+                encontrar los pares de tarjetas antes de que se acaben los movimientos. Para ello deberás observar
+                atentamente las tarjetas que se dan vuelta y memorizar el lugar que ocupaban para poder levantarlas
+                cuando se las necesite.
+            </p>
+            <h3>Aclaraciones</h3>
+            <ul>
+                <li>El juego consta de 3 niveles, ordenados de menor a mayor dificultad.</li>
+                <li>Cada vez que se dan vuelta dos tarjetas diferentes se resta un movimiento. Si se forman pares, el movimiento no se resta</li>
+                <li>Al apretar el botón de reiniciar, las tarjetas se vuelven a mezclar y se resetean los movimientos y
+                    estadisticas.</li>
+            </ul>
+        </div>
+        <div id="estadisticas">
+            <h2 id="movimientos">Movimientos restantes: 15</h2>
+            <table>
+                <tr>
+                    <td id="aciertos">Aciertos: 0</td>
+                    <td id="errores">Errores: 0</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <section id="memotest">
+        <table>
+            <tr>
+                <td><button id="0" onclick="darVuelta(0)">?</button></td>
+                <td><button id="1" onclick="darVuelta(1)">?</button></td>
+                <td><button id="2" onclick="darVuelta(2)">?</button></td>
+                <td><button id="3" onclick="darVuelta(3)">?</button></td>
+            </tr>
+            <tr>
+                <td><button id="4" onclick="darVuelta(4)">?</button></td>
+                <td><button id="5" onclick="darVuelta(5)">?</button></td>
+                <td><button id="6" onclick="darVuelta(6)">?</button></td>
+                <td><button id="7" onclick="darVuelta(7)">?</button></td>
+            </tr>
+            <tr>
+                <td><button id="8" onclick="darVuelta(8)">?</button></td>
+                <td><button id="9" onclick="darVuelta(9)">?</button></td>
+                <td><button id="10" onclick="darVuelta(10)">?</button></td>
+                <td><button id="11" onclick="darVuelta(11)">?</button></td>
+            </tr>
+            <tr>
+                <td><button id="12" onclick="darVuelta(12)">?</button></td>
+                <td><button id="13" onclick="darVuelta(13)">?</button></td>
+                <td><button id="14" onclick="darVuelta(14)">?</button></td>
+                <td><button id="15" onclick="darVuelta(15)">?</button></td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <div id="comenzar">
+            <input type="button" value="Comenzar" onclick="comenzar()">
+        </div>
+
+        <div id="perdiste">
+            <h2>¡Perdiste!</h2>
+        </div>
+
+        <div id="ganaste">
+            <h2>¡Ganaste!</h2>
+        </div>
+
+        <div id="nivelsig">
+            <a href="niveles/nivel2.html">Siguiente</a>
+        </div>
+
+        <div id="reiniciar">
+            <input type="button" value="Reiniciar" onclick="reiniciar()">
+        </div>
+    </section>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
